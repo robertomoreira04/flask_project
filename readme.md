@@ -13,6 +13,7 @@ Este projeto é um mini aplicativo web em Flask, que demonstra o uso de template
 ▶️ Como Executar
 1️⃣ Clone o repositório
 git clone https://github.com/robertomoreira04/flask_project
+
 cd flask_project
 
 2️⃣ Crie e ative um ambiente virtual (opcional, mas recomendado)
