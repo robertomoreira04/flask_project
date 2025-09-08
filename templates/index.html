@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h1 style="text-align: center;">HTML + FLASK</h1>
+    <hr>
+    <h2>Sobre mim </h2>
+        <h4>Meu nome é {{dev[0]}}</h4>
+        <p>Minha stack é {{dev[1]}}</p>
+    <h3>Tenho conhecimentos em: </h3>
+    <ol>
+        {% for knowledge in knowledges%}
+        <li>{{knowledge}}</li>
+        {% endfor %}
+    </ol>
+    <form action="{{url_for('index')}}" method="POST">
+    <label>Adicionar competência</label>
+    <input type="text" name="competencia"> 
+    <button>Adicionar</button>
+    </form>
+
+{% endblock conteudo %}

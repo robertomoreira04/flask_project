@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h2 style="text-align: center;">Minha Stack e Conhecimentos</h2>
+    <hr>
+    
+    {% for area, descricao in dictionary.items() %}
+    <details> 
+        <summary><strong>{{ area }}</strong></summary>
+        <p>{{ descricao }}</p>
+    </details>
+    {% endfor %}
+
+{% endblock conteudo %}
